@@ -48,7 +48,6 @@ function draw() {
     fill("#ccc");
 
     getClosestCentroidsOfEachPoint();
-    console.log("closestCentroids: ", closestCentroids);
 
     points.forEach((point, i) => {
         stroke(colors[closestCentroids[i]]);
