@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.7.0/lib/p5.js"></script>
+    <script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KMeans</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        overflow: hidden;
+      }
+
+      .next-iter-btn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        background: #50f;
+        padding: 8px;
+        border-radius: 7.62px;
+        border: 0;
+        color: white;
+        opacity: 0.5;
+        transition: opacity 0.15s;
+        cursor: pointer;
+      }
+      .next-iter-btn:hover {
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="next-iter-btn" onclick="recalculateCentroids()">Próxima iteração</button>
+  </body>
+</html>
